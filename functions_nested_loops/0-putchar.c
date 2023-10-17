@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * program that prints _putchar
- * Return always zero
+ * main - this is the head of _putchar
+ * Return: always zero
  */
+
 int main(void)
 {
 	_putchar('_');
