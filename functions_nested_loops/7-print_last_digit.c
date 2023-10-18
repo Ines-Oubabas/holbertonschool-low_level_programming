@@ -3,7 +3,7 @@
 /**
  * print_last_digit - check the last digit of a number.
  * @lastD: the character to be checked
- * return: the value of the last digit
+ * Return: the value of the last digit
  */
 int print_last_digit(int lastD)
 {
