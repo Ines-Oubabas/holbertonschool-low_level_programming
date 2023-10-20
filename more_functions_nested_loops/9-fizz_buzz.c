@@ -2,7 +2,6 @@
 #include "main.h"
 /**
  * main - check the code
- * @n: the character to check
  * Return: Fizz, Buzz, or FizzBuzz.
  */
 int main(void)
@@ -19,7 +18,10 @@ int main(void)
 			printf("Buzz");
 		else
 			printf("%d", n);
+		{
+		if (n != 100)
 		printf(" ");
+		}
 	}
 	putchar('\n');
 	return (0);
