@@ -4,7 +4,7 @@
  * @dest: character to check
  * @src: pointer
  * @n: var
- * Return: copie string 
+ * Return: copie string
  */
 char *_strncpy(char *dest, char *src, int n)
 {
