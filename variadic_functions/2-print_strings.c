@@ -3,10 +3,8 @@
 #include <stdarg.h>
 /**
 * print_strings - function that prints strings
-* @separator:
-* @n:
-* @...:
-* Return: Always 0
+* @separator: string to print
+* @n: the number of strings
 */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
@@ -18,7 +16,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 	str = va_arg(args, char *);
-	
 	if (str == NULL)
 	{
 		printf("(nil)");
@@ -27,5 +24,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		{
 			printf("%s", str);
 		}
-
+	if (separator != NULL && i < n - 1)
+	{
+		printf("%s", separator);
+	}
+	}
+	printf("\n");
+	va_end(args);
 }
